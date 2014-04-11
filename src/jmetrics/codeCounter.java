@@ -3,7 +3,7 @@ package jmetrics;
 
 /**
  *
- * @author ioannis
+ * @author ioannis on 01/04/2014.
  */
 
 import java.io.BufferedReader;
