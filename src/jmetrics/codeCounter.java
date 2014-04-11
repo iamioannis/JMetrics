@@ -1,6 +1,4 @@
-/**
- * Created by ioannis on 11/04/2014.
- */
+
 package jmetrics;
 
 /**
