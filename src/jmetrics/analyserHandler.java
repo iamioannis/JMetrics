@@ -11,14 +11,21 @@ package jmetrics;
  * @author ioannis
  */
 public class analyserHandler {
-    private Strategy strategy;
+    private Strategy locStrategy;
+    private Strategy nomStrategy;
     
     public analyserHandler(Strategy strategy){
-        this.strategy = strategy;
+        this.locStrategy = strategy;
+        this.nomStrategy = strategy;
+    }
+
+    analyserHandler(LocCounterStrategy locCounterStrategy, NoOfMethodsStrategy noOfMethodsStrategy) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
             
     public void executeAnalyserHandler(String dire){
-        strategy.analyse(dire);
+        locStrategy.analyse(dire);
+        nomStrategy.analyse(dire);
     }
     
 }
