@@ -12,4 +12,4 @@ package jmetrics;
  */
 public interface Strategy {
     public void analyse(String dir);
-}
+}   

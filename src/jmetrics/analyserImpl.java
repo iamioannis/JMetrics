@@ -20,7 +20,11 @@ public final class analyserImpl {
     analyserHandler handler = new analyserHandler(new LocCounterStrategy());
     handler.executeAnalyserHandler(dir);
     
+    analyserHandler handler2 = new analyserHandler(new NoOfMethodsStrategy());
+    handler2.executeAnalyserHandler(dir);
     
+    analyserHandler handler3 = new analyserHandler(new ASTViewStrategy());
+    handler3.executeAnalyserHandler(dir);
     }
     
 }
