@@ -6,30 +6,23 @@
 
 package jmetrics;
 
+import analysersStrategies.LocCounterStrategy;
+import analysersStrategies.NoOfMethodsStrategy;
+
 /**
  *
  * @author ioannis
  */
 public class analyserHandler {
-    private Strategy locStrategy;
-    private Strategy nomStrategy;
-    private Strategy astviewStrategy;
+    
+    private Strategy strategy;
     
     public analyserHandler(Strategy strategy){
-        this.locStrategy = strategy;
-        this.nomStrategy = strategy;
-        this.astviewStrategy = strategy;
+        this.strategy = strategy;
     }
-
-    analyserHandler(LocCounterStrategy locCounterStrategy,NoOfMethodsStrategy noOfMethodsStrategy, ASTViewStrategy astViewStrategy) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-   
-            
+      
     public void executeAnalyserHandler(String dire){
-        locStrategy.analyse(dire);
-        nomStrategy.analyse(dire);
-        astviewStrategy.analyse(dire);
+        strategy.analyse(dire);
     }
     
 }

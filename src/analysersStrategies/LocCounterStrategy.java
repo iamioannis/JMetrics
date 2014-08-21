@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package jmetrics;
+package analysersStrategies;
 
 /**
  *
@@ -17,6 +17,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jmetrics.Strategy;
 
 public class LocCounterStrategy implements Strategy{
     

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package jmetrics;
+package analysersStrategies;
 
 /**
  *
@@ -18,6 +18,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jmetrics.Strategy;
 
 public class NoOfMethodsStrategy implements Strategy {
     
@@ -45,8 +46,12 @@ public class NoOfMethodsStrategy implements Strategy {
         if(f.getName().endsWith(".java")){
             //BufferedReader br = new BufferedReader(new FileReader(f));
             Class c = f.getClass();
-            Method m[] = c.getDeclaredMethods();
+            Method m[] = c.getMethods();
             int x = m.length;
+            System.out.println(""+f.getName()+" "+x);
+//            for (Method met:m){
+//                System.out.println("\t"+met.toString()); 
+//            }
             noOfMethods = noOfMethods + x;
             this.files++;
         }
