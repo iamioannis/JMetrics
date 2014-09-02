@@ -8,7 +8,6 @@ package jmetrics;
 
 import analysersStrategies.LocCounterStrategy;
 import analysersStrategies.NoOfMethodsStrategy;
-import analysersStrategies.astOperationsStrategy;
 import java.io.IOException;
 
 /**
@@ -23,12 +22,11 @@ public final class analyserImpl {
     analyserHandler handler = new analyserHandler(new LocCounterStrategy());
     handler.executeAnalyserHandler(dir);
     
-
+    handler = new analyserHandler(new NoOfMethodsStrategy());
+    handler.executeAnalyserHandler(dir);
     
     
     //This is where new Strategies should be implemented
+    }
     
-    handler =  new analyserHandler(new astOperationsStrategy());
-    handler.executeAnalyserHandler(dir);
-}
 }
