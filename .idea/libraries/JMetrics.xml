@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JMetrics">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/JMetrics.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
