@@ -48,7 +48,7 @@ public class NoOfMethodsStrategy implements Strategy {
             Class c = f.getClass();
             Method m[] = c.getMethods();
             int x = m.length;
-            System.out.println("fashlfna"+f.getName()+" "+x);
+            System.out.println(""+f.getName()+" "+x);
 //            for (Method met:m){
 //                System.out.println("\t"+met.toString()); 
 //            }
