@@ -8,6 +8,7 @@ package jmetrics;
 
 import analysersStrategies.LocCounterStrategy;
 import analysersStrategies.NoOfMethodsStrategy;
+import analysersStrategies.astOperationsStrategy;
 
 /**
  *

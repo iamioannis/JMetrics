@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -13,7 +13,7 @@ package analysersStrategies;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileReader;  
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -46,7 +46,8 @@ private long lines = 0;
             BufferedReader br = new BufferedReader(new FileReader(f));
             String line = br.readLine();
             while (line != null) {
-                if (!line.trim().equals("")) {
+                //PEDNING added check for comment lines
+                if (!line.trim().equals("") && !line.startsWith("//") && !line.startsWith("*") && !line.startsWith("/*")) {
                     this.lines++;
                         }
                 line = br.readLine();
