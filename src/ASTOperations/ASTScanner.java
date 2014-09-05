@@ -56,12 +56,12 @@ public class ASTScanner extends TreeScanner<Void, Void> {
         return super.visitForLoop(arg0, a);
     }
     
-//    @Override
-//    public Void visitMethod(MethodTree arg0, Void a){
-//        System.out.println("Methods: " + arg0.getName().toString());
-//        theStorage.addToMethodsTreesCollection(arg0.getName().toString());
-//        return super.visitMethod(arg0, a);
-//    }
+    @Override
+    public Void visitMethod(MethodTree arg0, Void a){
+        //System.out.println("Methods: " + arg0.getName().toString());
+        theStorage.addToMethodsTreesCollection(arg0.getName().toString());
+        return super.visitMethod(arg0, a);
+    }
     
     //Added from Complexity
     @Override
@@ -80,5 +80,11 @@ public class ASTScanner extends TreeScanner<Void, Void> {
     public Void visitDoWhileLoop(DoWhileLoopTree arg0, Void a) {
         theStorage.increaseComplexity();
         return super.visitDoWhileLoop(arg0, a);
+    }
+    
+    @Override
+    public Void visitClass(ClassTree arg0, Void a){
+        theStorage.addToClassTreesCollection(arg0.getSimpleName().toString());
+        return super.visitClass(arg0, a);
     }
 }

@@ -59,8 +59,9 @@ public class astOperationsStrategy implements Strategy{
     private void printResults() {
         System.out.println("Number of If Statements in project: "+ theStorage.getIfTreesCollectionSize() + "\n" + "Number of For Loops in Project: " 
                     + theStorage.getForLoopTreesCollectionSize() + "\n" + "Number of Methods in Project: " + theStorage.getMethodsTreesCollectionSize());
+        System.out.println("Number of Classes in the project: " + theStorage.getClassTreesCollectionSize() + "\n");
         System.out.println("Cyclomatic Complexity: " + theStorage.getComplexity());
-        System.out.println("Average of Cyclomatic Complexity: " + theStorage.getAvgComplexity());
+        //System.out.println("Average of Cyclomatic Complexity: " + theStorage.getAvgComplexity());
     }
 }
 

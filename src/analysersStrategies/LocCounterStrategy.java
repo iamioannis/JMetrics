@@ -38,6 +38,7 @@ private long lines = 0;
 
     private void countLinesOfCodeInDirectory(File dir) throws IOException {
     for (File f : dir.listFiles()) {
+        int tempLines = 0;
         if (f.isDirectory()) {
             countLinesOfCodeInDirectory(f);
         } 
@@ -47,12 +48,14 @@ private long lines = 0;
             String line = br.readLine();
             while (line != null) {
                 //PEDNING added check for comment lines
-                if (!line.trim().equals("") && !line.startsWith("//") && !line.startsWith("*") && !line.startsWith("/*")) {
+                if (!line.trim().equals("") && !line.trim().startsWith("//") && !line.trim().startsWith("*") && !line.trim().startsWith("/*") && !line.trim().startsWith("/**") && !line.trim().startsWith("*/")) {
                     this.lines++;
+                    tempLines++;
                         }
                 line = br.readLine();
             }
             br.close();
+            System.out.println("The Lines of code in " + f.getName() + " is " + tempLines);
             this.files++;
         }
         }

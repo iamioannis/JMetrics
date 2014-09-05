@@ -128,4 +128,22 @@ public class Storage {
 
     }
     
+    private ArrayList<String> classTreesCollection = new ArrayList<String>();
+
+    /**
+     * @return the size of 
+     */
+    public int getClassTreesCollectionSize() {
+        return classTreesCollection.size();
+    }
+
+    /**
+     * @param String the class name to add to the classTreesCollection
+     */
+    public void addToClassTreesCollection(String className) {
+        classTreesCollection.add(className);
+    }
+    
+    
+    
 }
