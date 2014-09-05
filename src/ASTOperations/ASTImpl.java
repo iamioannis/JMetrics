@@ -6,21 +6,14 @@
 
 package ASTOperations;
 
-import static ASTOperations.ASTScanner.theStorage;
+import com.sun.source.tree.CompilationUnitTree;
+import com.sun.source.util.JavacTask;
 import java.io.IOException;
-import java.util.List;
 import javax.tools.DiagnosticCollector;
 import javax.tools.JavaCompiler;
 import javax.tools.JavaFileObject;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
-import javax.tools.JavaCompiler.CompilationTask;
-
-import com.sun.source.tree.*;
-import com.sun.source.util.JavacTask;
-import com.sun.source.util.SourcePositions;
-import com.sun.source.util.TreeScanner;
-import com.sun.source.util.Trees;
 /**
  *
  * @author ioannis

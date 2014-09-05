@@ -8,15 +8,11 @@ package analysersStrategies;
 
 import ASTOperations.ASTImpl;
 import static ASTOperations.ASTScanner.theStorage;
-import com.sun.tools.javac.util.Name;
-import jmetrics.Strategy;
-
 import java.io.File;
 import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jmetrics.Strategy;
 
 
 /**

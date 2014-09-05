@@ -6,22 +6,18 @@
 
 package ASTOperations;
 
-import java.io.IOException;
-import java.util.List;
-import javax.tools.DiagnosticCollector;
-import javax.tools.JavaCompiler;
-import javax.tools.JavaFileObject;
-import javax.tools.StandardJavaFileManager;
-import javax.tools.ToolProvider;
-import javax.tools.JavaCompiler.CompilationTask;
-
-import com.sun.source.tree.*;
-import com.sun.source.util.JavacTask;
-import com.sun.source.util.SourcePositions;
+import com.sun.source.tree.AnnotationTree;
+import com.sun.source.tree.CaseTree;
+import com.sun.source.tree.ClassTree;
+import com.sun.source.tree.CompilationUnitTree;
+import com.sun.source.tree.ConditionalExpressionTree;
+import com.sun.source.tree.DoWhileLoopTree;
+import com.sun.source.tree.ForLoopTree;
+import com.sun.source.tree.IfTree;
+import com.sun.source.tree.MethodTree;
+import com.sun.source.tree.WhileLoopTree;
 import com.sun.source.util.TreeScanner;
-import com.sun.source.util.Trees;
 import java.util.List;
-import ASTOperations.Storage;
 /**
  *
  * @author ioannis

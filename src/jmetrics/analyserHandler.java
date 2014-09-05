@@ -6,9 +6,6 @@
 
 package jmetrics;
 
-import analysersStrategies.LocCounterStrategy;
-import analysersStrategies.astOperationsStrategy;
-
 /**
  *
  * @author ioannis
