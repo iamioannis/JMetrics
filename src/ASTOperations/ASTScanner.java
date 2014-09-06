@@ -48,7 +48,7 @@ public class ASTScanner extends TreeScanner<Void, Void> {
     @Override
     public Void visitForLoop(ForLoopTree arg0, Void a){
         theStorage.addToForLoopTreesCollection(arg0.getCondition().toString());
-        theStorage.increaseComplexity();
+        System.out.println("ForLoops: " + arg0.getCondition().toString());
         return super.visitForLoop(arg0, a);
     }
     

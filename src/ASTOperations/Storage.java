@@ -84,7 +84,7 @@ public class Storage {
      * @param statement
      */
     public void addToForLoopTreesCollection(String statement){
-
+        System.out.println("Called");
        forLoopTreesCollection.add(statement);
     }
     
@@ -94,7 +94,6 @@ public class Storage {
      */
     public int getForLoopTreesCollectionSize(){
         return forLoopTreesCollection.size();
-
     }
     
     /**
