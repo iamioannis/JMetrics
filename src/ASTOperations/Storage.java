@@ -6,6 +6,8 @@
 
 package ASTOperations;
 
+import java.lang.reflect.Array;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 /**
@@ -14,8 +16,13 @@ import java.util.ArrayList;
  */
 public class Storage {
     
-    static int complexity = 1;
+    static int complexity = 2;
     static int avgComplexity = 0;
+    static int noOfIfTrees = 0;
+    static int noOfMethods = 0;
+    static int noOfClasses = 0;
+    static int noOfForLoops = 0;
+
     
     /**
      *Method that increases the Cyclomatic Complexity when invoked  
@@ -24,9 +31,6 @@ public class Storage {
         complexity++;
     }
     
-    public void calculateComplexity(){
-        avgComplexity = complexity / methodsCollection.size();
-    }
     
     /**
      * Accessor that retrieves the Cyclomatic Complexity Metric
@@ -42,107 +46,82 @@ public class Storage {
     public int getAvgComplexity(){
         return avgComplexity;
     }
+       
+    //IfStatements
     
     /**
-     * Collection of all the If Loop Tree nodes
+     * Accesor that returns the size of If Trees
+     * @return the ifTrees
      */
-    public ArrayList<String> ifTreesCollection  = new ArrayList<String>();
-    
-    public ArrayList<String> getIfTreesCollection() {
-        return ifTreesCollection;
+    public int getIfTrees() {
+        return noOfIfTrees;
     }
-    
     /**
-     * Modifier that adds the statement of the If tree to the ifTreeCollection
+     * Modifier increases the number of If Tree nodes
      * @param statement
      */
-    public void addToIfTreesCollection(String statement){
-
-       ifTreesCollection.add(statement);
+    public void increaseIfTrees() {
+        noOfIfTrees++;
     }
     
-    /**
-     * Accessor to retrieve the size of the IfTreeCollection
-     * @return 
-     */
-    public int getIfTreesCollectionSize(){
-        return ifTreesCollection.size();
 
-    }
+    //For Loops
+    
 
     /**
-     * Collection of all the For Loop Tree nodes
+     * Modifier that increases the number of For Loop Occurances
+     * 
      */
-    public ArrayList<String> forLoopTreesCollection = new ArrayList<String>();
-    
-    public ArrayList<String> forLoopTreesCollection() {
-        return forLoopTreesCollection;
+    public void increaseNoOfForLoops() {
+        noOfForLoops++;
     }
     
     /**
-     * Modifier that adds the statement of the For Loop tree to the ForLoopTreesCollection
-     * @param statement
+     * Accessor that returns the number of For Loops in the Project
+     * @return the noOfForLoops
      */
-    public void addToForLoopTreesCollection(String statement){
-        System.out.println("Called");
-       forLoopTreesCollection.add(statement);
+    public int getNoOfForLoops() {
+        return noOfForLoops;
     }
-    
-    /**
-     * Accessor to retrieve the size of the ForLoopTreesCollection
-     * @return int
-     */
-    public int getForLoopTreesCollectionSize(){
-        return forLoopTreesCollection.size();
-    }
-    
-    /**
-     * Collection of all the Method Tree nodes
-     */
-    public ArrayList<String> methodsCollection = new ArrayList<String>();
-    
-    /**
-     * Accessor that returns the Methods contained in the MethodTreeCollection
-     * @return ArrayList<String>
-     */
-    public ArrayList<String> methodsTreesCollection() {
-        return methodsCollection;
-    }
-     
-    /**
-     * Modifier that adds the statement of the Method tree to the MethodTreesCollection
-     * @param statement
-     */
-    public void addToMethodsTreesCollection(String statement){
 
-       methodsCollection.add(statement);
+    
+    //Methods 
+    /**
+     * Modifier that increases the number of Methods
+     * 
+     */
+    public void increaseMethodCount(){
+
+       noOfMethods++;
     }
     
     /**
-     * Accessor to retrieve the size of the MethodTreesCollection
-     * @return 
+     * Accessor that retrieves the number of Methods in the Project
+     * @return the noOfMethods
      */
-    public int getMethodsTreesCollectionSize(){
-        return methodsCollection.size();
+    public int getNoOfMethods(){
+        return noOfMethods;
 
     }
     
-    private ArrayList<String> classTreesCollection = new ArrayList<String>();
-
+    //Classes
+    
     /**
-     * @return the size of 
+     * Modifier that increases the number of Classes
+     * 
      */
-    public int getClassTreesCollectionSize() {
-        return classTreesCollection.size();
-    }
+    public void increaseClassCount(){
 
-    /**
-     * @param String the class name to add to the classTreesCollection
-     */
-    public void addToClassTreesCollection(String className) {
-        classTreesCollection.add(className);
+       noOfClasses++;
     }
     
-    
+    /**
+     * Accessor that retrieves the number of Classes in the Project
+     * @return the noOfClasses
+     */
+    public int getNoOfClasses(){
+        return noOfClasses;
+
+    }
     
 }

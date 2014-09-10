@@ -10,6 +10,7 @@ import ASTOperations.ASTImpl;
 import static ASTOperations.ASTScanner.theStorage;
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jmetrics.Strategy;
@@ -53,11 +54,11 @@ public class astOperationsStrategy implements Strategy{
     }
 
     private void printResults() {
-        System.out.println("Number of If Statements in project: "+ theStorage.getIfTreesCollectionSize() + "\n" + "Number of For Loops in Project: " 
-                    + theStorage.getForLoopTreesCollectionSize() + "\n" + "Number of Methods in Project: " + theStorage.getMethodsTreesCollectionSize());
-        System.out.println("Number of Classes in the project: " + theStorage.getClassTreesCollectionSize() + "\n");
+        System.out.println("Number of If Statements in project: "+ theStorage.getIfTrees() + "\n" + "Number of Methods in Project: " + theStorage.getNoOfMethods());
+        System.out.println("Number of For Loops in the project: " + theStorage.getNoOfForLoops());
+        System.out.println("Number of Classes in the project: " + theStorage.getNoOfClasses() + "\n");
         System.out.println("Cyclomatic Complexity: " + theStorage.getComplexity());
-        //System.out.println("Average of Cyclomatic Complexity: " + theStorage.getAvgComplexity());
+        //System.out.println("While Lopps: " + theStorage.getWhileLoops());
     }
 }
 
