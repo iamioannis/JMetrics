@@ -6,9 +6,6 @@
 
 package ASTOperations;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
 
 /**
  * Storage facility that stores the Metrics of the analysis
@@ -122,6 +119,12 @@ public class Storage {
     public int getNoOfClasses(){
         return noOfClasses;
 
+    }
+    
+    public int getCCBasedOnIfStatemets(){
+        int ccboif = noOfIfTrees + 2;
+        
+        return ccboif;
     }
     
 }
