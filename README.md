@@ -11,7 +11,7 @@ JMetrics is a standalone Java application that provides static code metrics of J
 ###Usage
 * Open a terminal app
 * Navigate to the folder that contains the JMetrics.jar file
-* Type ``` JMetrics.jar -jar <path-to-the-project-folder> ```
+* Type ``` java JMetrics.jar -jar <path-to-the-project-folder> ```
 * Output shall be presented in the terminal.
 
 ###Note
