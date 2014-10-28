@@ -33,6 +33,4 @@ public class analyserHandler {
     public void executeAnalyserHandler(String dire){
         strategy.analyse(dire);
     }
-
-    
 }
