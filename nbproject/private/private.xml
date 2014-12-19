@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/jmetrics/Strategy.java</file>
-            <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/ASTOperations/ASTImpl.java</file>
-            <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/ASTOperations/ASTScanner.java</file>
             <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/analysersStrategies/LocCounterStrategy.java</file>
-            <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/analysersStrategies/astOperationsStrategy.java</file>
             <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/jmetrics/analyserImpl.java</file>
             <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/jmetrics/analyserHandler.java</file>
-            <file>file:/Users/ioannis/Dropbox/Development/NetBeansProjects/JMetrics/src/ASTOperations/Storage.java</file>
         </group>
     </open-files>
 </project-private>
