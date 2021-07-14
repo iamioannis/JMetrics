@@ -1,4 +1,4 @@
-#JMetrics
+# JMetrics
 
 Static Code Metrics tool
 
@@ -8,13 +8,13 @@ JMetrics is a standalone Java application that provides static code metrics of J
 
 ========
 
-###Usage
+### Usage
 * Open a terminal app
 * Navigate to the folder that contains the JMetrics.jar file
 * Type ``` java JMetrics.jar -jar <path-to-the-project-folder> ```
 * Output shall be presented in the terminal.
 
-###Note
+### Note
 
 This is a work in progress project with all that comes with it.
 
